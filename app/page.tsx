@@ -8,11 +8,14 @@ export default function Home() {
       <Header />
       <main className="flex-grow bg-gradient-to-b from-green-50 to-rose-50">
         <div className="container mx-auto px-4 py-12">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Preserve Your Flowers Forever</h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Upload a photo of your precious flowers and transform them into beautiful preserved frames that last a
-              lifetime.
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+              Preserve Your Flowers
+              <span className="block text-rose-600">For a Lifetime</span>
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Transform your precious flowers into beautiful preserved artwork that captures
+              their beauty forever. Perfect for weddings, anniversaries, or any special occasion.
             </p>
           </div>
 

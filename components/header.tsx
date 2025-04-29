@@ -10,50 +10,34 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="w-full py-4 bg-white/90 backdrop-blur-sm border-b sticky top-0 z-50">
-      <div className="container mx-auto px-4">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <Flower className="h-6 w-6 text-rose-500 transition-transform duration-300 group-hover:rotate-12" />
-            <span className="text-xl font-bold text-gray-800">Bloom Forever</span>
+          <Link href="/" className="flex items-center space-x-2">
+            <Flower className="h-6 w-6 text-rose-600" />
+            <span className="text-2xl font-semibold text-rose-600">BloomKeep</span>
           </Link>
-
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-gray-700 hover:text-rose-500 transition-colors relative group">
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link href="/" className="text-gray-700 hover:text-rose-600 font-medium transition-colors">
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/gallery" className="text-gray-700 hover:text-rose-500 transition-colors relative group">
+            <Link href="/about" className="text-gray-700 hover:text-rose-600 font-medium transition-colors">
+              About Us
+            </Link>
+            <Link href="/gallery" className="text-gray-700 hover:text-rose-600 font-medium transition-colors">
               Gallery
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/how-it-works" className="text-gray-700 hover:text-rose-500 transition-colors relative group">
-              How It Works
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-rose-500 transition-colors relative group">
-              About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-rose-500 transition-colors relative group">
+            <Link href="/contact" className="text-gray-700 hover:text-rose-600 font-medium transition-colors">
               Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </nav>
-
-          <div className="flex items-center gap-4">
-            <Button variant="outline" className="hidden sm:flex">
+          <div className="flex items-center space-x-4">
+            <Button variant="outline" className="hidden md:inline-flex border-rose-600 text-rose-600 hover:bg-rose-50">
               Sign In
             </Button>
-            <Button className="bg-rose-500 hover:bg-rose-600 shadow-sm hover:shadow-md transition-all">
-              Get Started
+            <Button className="bg-rose-600 hover:bg-rose-700">
+              Order Now
             </Button>
-            <button
-              className="md:hidden text-gray-700 hover:text-rose-500 transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
           </div>
         </div>
       </div>
@@ -74,25 +58,18 @@ export function Header() {
             Home
           </Link>
           <Link
+            href="/about"
+            className="text-gray-700 hover:text-rose-500 transition-colors py-2 px-4 hover:bg-rose-50 rounded-md"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
             href="/gallery"
             className="text-gray-700 hover:text-rose-500 transition-colors py-2 px-4 hover:bg-rose-50 rounded-md"
             onClick={() => setMobileMenuOpen(false)}
           >
             Gallery
-          </Link>
-          <Link
-            href="/how-it-works"
-            className="text-gray-700 hover:text-rose-500 transition-colors py-2 px-4 hover:bg-rose-50 rounded-md"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            How It Works
-          </Link>
-          <Link
-            href="/about"
-            className="text-gray-700 hover:text-rose-500 transition-colors py-2 px-4 hover:bg-rose-50 rounded-md"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            About
           </Link>
           <Link
             href="/contact"
