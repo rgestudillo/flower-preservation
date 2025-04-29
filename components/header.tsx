@@ -15,7 +15,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Flower className="h-6 w-6 text-rose-600" />
-            <span className="text-2xl font-semibold text-rose-600">BloomKeep</span>
+            <span className="text-2xl font-semibold text-rose-600">Sushi Flowers</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-rose-600 font-medium transition-colors">

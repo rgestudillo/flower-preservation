@@ -11,7 +11,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2 group">
               <Flower className="h-6 w-6 text-rose-500 transition-transform duration-300 group-hover:rotate-12" />
-              <span className="text-xl font-bold text-gray-800">Bloom Forever</span>
+              <span className="text-xl font-bold text-gray-800">Sushi Flowers</span>
             </div>
             <p className="text-gray-600 text-sm">Preserving your precious moments through beautiful flower frames.</p>
             <div className="flex items-center gap-4">
@@ -145,7 +145,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-12 pt-6 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Bloom Forever. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sushi Flowers. All rights reserved.</p>
         </div>
       </div>
     </footer>
